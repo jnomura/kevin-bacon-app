@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameText"
+        android:text="Actor Name"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true"
+        android:gravity="left" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/characterText"
+        android:text="Character Name"
+        android:textSize="18sp"
+        android:layout_toRightOf="@+id/nameText"
+        android:layout_toEndOf="@+id/nameText"
+        android:layout_alignParentRight="true"
+        android:gravity="right" />
+
+</RelativeLayout>

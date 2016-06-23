@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:padding="10dp"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mediaTitleText"
+        android:text="This is a Long Movie Title"
+        android:textSize="16sp"
+        android:layout_alignParentLeft="true"
+        android:gravity="left"
+        android:ellipsize="end"
+        android:lines="1"
+        android:singleLine="true"
+        android:maxWidth="200dp"
+        android:nestedScrollingEnabled="false" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/releaseText"
+        android:text="1999"
+        android:textSize="16sp"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:layout_toRightOf="@+id/mediaTitleText"
+        android:layout_toEndOf="@+id/mediaTitleText" />
+
+</RelativeLayout>
